@@ -9,15 +9,15 @@
 <body> 
     <div class="container">
         <h2>Cadastro de Cliente</h2>
-        <form action="" style="width:500px;">
+        <form action="recebe.php" method="post" style="width:500px;">
             <label for="">Nome:</label>
-            <input type="text" class="form-control">
+            <input type="text" name="nome" class="form-control" required>
             <label for="">Idade:</label>
-            <input type="number" class="form-control">
+            <input type="number" name="idade" class="form-control">
             <label for="">E-mail:</label>
-            <input type="email" class="form-control">
+            <input type="email" name="email" class="form-control" required>
             <br>
-            <input type="submit" class="btn btn-primary">
+            <input type="submit" value="Enviar" class="btn btn-primary">
         </form>
     </div>
 </body>
